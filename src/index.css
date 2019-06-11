@@ -1,51 +1,64 @@
 body {
-    font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
-  }
-  
-  ol, ul {
-    padding-left: 30px;
-  }
-  
-  .board-row:after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-  .status {
-    margin-bottom: 10px;
-  }
-  
-  .square {
-    background: #fff;
-    border: 1px solid #999;
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 34px;
-    height: 34px;
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
-    text-align: center;
-    width: 34px;
-  }
-  
-  .square:focus {
-    outline: none;
-  }
-  
-  .kbd-navigation .square:focus {
-    background: #ddd;
-  }
-  
-  .game {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .game-info {
-    margin-left: 20px;
-  }
-  
+  font: 14px "Century Gothic", Futura, sans-serif;
+  background: rgb(105,255,240);
+  background: -moz-linear-gradient(220deg, rgba(105,255,240,1) 0%, rgba(73,132,144,1) 100%);
+  background: -webkit-linear-gradient(220deg, rgba(105,255,240,1) 0%, rgba(73,132,144,1) 100%);
+  background: linear-gradient(220deg, rgba(105,255,240,1) 0%, rgba(73,132,144,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#69fff0",endColorstr="#498490",GradientType=1);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+ 
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgb(0, 0, 0);
+  float: left;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 100px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.game-board{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
